@@ -1,3 +1,5 @@
+<b>Units of Measurement for Ada</b>
+
 <p>The need of support for handling measurement units does not require any approval. It is in particular true for the Ada programming language with its stress on safety and maintainability. The proposed set of packages represents a possible solution of the unit problem. Dimension checking is performed at run-time, so performance is sacrificed for safety. However, an attempt was made to reduce performance hit. The type Measure used to represent dimensioned values can be constrained to a specific unit. Operations on constrained subtypes of Measure could be potentially as efficient as floating-point operations. They are declared inlined, so that at least theoretically, a decent compiler could perform discriminant calculation and check at compile time.
 The key features of the approach:</p>
 
